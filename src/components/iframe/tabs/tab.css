@@ -1,0 +1,9 @@
+/* This is simply here to hide the god awful scrollbar from the tabs */ 
+#tabContainer::-webkit-scrollbar {
+    display: none;
+}
+
+#tabContainer {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

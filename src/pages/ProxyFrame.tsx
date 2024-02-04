@@ -98,7 +98,7 @@ export function ProxyFrame(props: { url: string }) {
   }
 
   if (proxyMode === "embed") {
-    history.pushState({}, "", "/");
+    //history.pushState({}, "", "/");
   }
 
   return (

@@ -1,5 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
 import { IframeHeader } from "./IframeHeader";
+import { Tab, TabUI } from "./tabs/Tab";
 import { useState } from "preact/hooks";
 
 export function Iframe(props: { url: string }) {
@@ -29,7 +30,13 @@ export function Iframe(props: { url: string }) {
           exit={{ x: -200, width: 0 }}
           transition={{ duration: 0.5 }}
         >
-          sidebar
+            <TabUI>
+                <Tab title="Tab 1" favicon="https://google.com/favicon.ico" key="1" />
+                <Tab title="Tab 2" favicon="https://google.com/favicon.ico" key="2" />
+                <Tab title="Tab 3" favicon="https://google.com/favicon.ico" key="3" />
+                <Tab title="Tab 4" favicon="https://google.com/favicon.ico" key="4" />
+                <Tab title="Tab 5" favicon="https://google.com/favicon.ico" key="5" />
+            </TabUI>
         </motion.div>
 
         <motion.div
